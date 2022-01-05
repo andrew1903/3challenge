@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{ background-color:  hsl(225, 100%, 94%); font-family: 'Red Hat Display', sans-serif; }
+    .golov{background-color: hsl(225, 100%, 98%); border-radius: 20px}
+    .a{ position: absolute; left: 0%; top: 0%; opacity: 0;}
+    @media (max-width: 1440px) {
+      .golov{position: absolute; width: 450px; height: 570px; margin-left: 30%; margin-top: -190px; }
+      .a{ opacity: 1;}
+      .b{ opacity: 0;}
+      .img{width: 450px}
+      .mus{width: 50px; height: 100%; margin-top: 15px}
+      .nav{list-style: none; margin-left: -143px}
+    }
+    @media (max-width: 375px) {
+      .golov {position: absolute;width: 330px;height: 570px; margin: 0px 15px}
+      .b {position: absolute;left: 0%;top: 0%;}
+      .b {opacity: 1;}
+      .a {opacity: 0;}
+      .img {width: 330px}
+      .mus{width: 50px; height: 100%; margin-top: 20px}
+      .b-pov div{margin-bottom: 30px}
+      .nav{list-style: none; margin-left: -93px; margin-top: 20px}
+    }
+    .b-pov{ margin-top: 40px; margin: 0px auto; text-align: center}
+
+    .txt{font-size: 16px; color: hsl(224, 23%, 55%)}
+
+    .nav li{margin-bottom: 10px}
+    .img{border-radius: 20px 20px 0px 0px;}
+    .col{color: hsl(223, 47%, 23%); text-decoration: none}
+    .link1{color: hsl(245, 75%, 52%)}
+    .link1:hover{color: hsl(223, 47%, 23%); text-decoration: none}
+    .link2{width: 80%; margin: 0px auto; text-decoration: none}
+    .link2:hover{color: hsl(223, 47%, 23%);}
+    .div{margin-top: 20px}
+    .button_1{color:White; background-color: hsl(245, 75%, 52%); border: 0px; width: 80%;
+      height: 50px; padding: 10px; border-radius: 10px; box-shadow: 0px 10px 2px 2px hsla(245, 75%, 52%, 0.05);}
+    .button_1:hover{color:White;box-shadow: 0px 10px 2px 2px hsla(223, 47%, 23%, 0.05); background-color: hsl(223, 47%, 23%); transition: all 0.3s ease 0s;}
+    .w1{font-weight: 900}
+    .w2{font-weight: 700}
+    .w3{font-weight: 500}
+  </style>
+</head>
+<body>
+<img class="a" src="images/pattern-background-desktop.svg">
+<img class="b" src="images/pattern-background-mobile.svg">
+  <div>
+    <div class="golov">
+      <div class="">
+        <div>
+          <img class="img" src="images/illustration-hero.svg">
+        </div>
+      </div>
+      <div class="b-pov">
+        <div>
+          <h1 class="col w1">Order Summary</h1>
+          <p class="txt w3" style="width: 80%; margin: 0px auto; ">You can now listen to millions of songs, audiobooks, and podcasts on any
+            device anywhere you like!</p>
+          <div style="display: flex; justify-content: space-around">
+          <img class="mus" src="images/icon-music.svg">
+          <ul class="nav">
+            <li style="margin-left: 5px"><span class="col w2 txt" >Annual Plan</span></li>
+            <li class="txt w3">$59.99/year</li>
+          </ul>
+            <p style="margin-top: 30px"><a class="w3 link1" href="" >Change</a></p>
+          </div>
+          <div><form action="" method="post" class="" >
+            <input type="submit" value="Proceed to Payment" class="txt w2 button_1">
+          </form></div>
+          <div class="div">
+            <a class="link2 w2 txt" class="" href="">Cancel Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
